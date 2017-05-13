@@ -42,8 +42,13 @@ class Users_model extends CI_Model {
             'email' => $this->input->post('email'),
             'first_name' => $this->input->post('first_name'),
             'last_name' => $this->input->post('last_name'),
-            'password' => md5($this->input->post('password')),
+            //'password' => md5($this->input->post('password')),
         );
+
+        if ($password = $this->input->post('password'))
+        {
+            $data['password'] = md5($password);
+        }
 
         if ($id == 0) {
             return $this->db->insert('users', $data);

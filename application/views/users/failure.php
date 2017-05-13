@@ -1,0 +1,1 @@
+<p>Unsuccessful attempt to add user!</p>

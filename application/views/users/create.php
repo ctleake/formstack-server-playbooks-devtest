@@ -21,6 +21,10 @@
         <td><input type="input" name="password" size="50" /></td>
     </tr>
     <tr>
+        <td><label for="passconf">Password Confirm</label></td>
+        <td><input type="input" name="password" size="50" /></td>
+    </tr>
+    <tr>
         <td></td>
         <td><input type="submit" name="submit" value="Create users item" /></td>
     </tr>
