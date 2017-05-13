@@ -18,11 +18,11 @@
     </tr>
     <tr>
         <td><label for="password">Password</label></td>
-        <td><input type="input" name="password" size="50" /></td>
+        <td><input type="password" name="password" size="50" /></td>
     </tr>
     <tr>
         <td><label for="passconf">Password Confirm</label></td>
-        <td><input type="input" name="password" size="50" /></td>
+        <td><input type="password" name="passconf" size="50" /></td>
     </tr>
     <tr>
         <td></td>
