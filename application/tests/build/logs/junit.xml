@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="CodeIgniter Application Test Suite" tests="3" assertions="3" failures="0" errors="0" time="0.060428">
-    <testsuite name="Welcome_test" file="/var/www/html/formstack/server-playbooks-devtest/application/tests/controllers/Welcome_test.php" tests="3" assertions="3" failures="0" errors="0" time="0.060428">
-      <testcase name="test_index" class="Welcome_test" file="/var/www/html/formstack/server-playbooks-devtest/application/tests/controllers/Welcome_test.php" line="13" assertions="1" time="0.031133"/>
-      <testcase name="test_method_404" class="Welcome_test" file="/var/www/html/formstack/server-playbooks-devtest/application/tests/controllers/Welcome_test.php" line="19" assertions="1" time="0.019366"/>
-      <testcase name="test_APPPATH" class="Welcome_test" file="/var/www/html/formstack/server-playbooks-devtest/application/tests/controllers/Welcome_test.php" line="25" assertions="1" time="0.009929"/>
+  <testsuite name="CodeIgniter Application Test Suite" tests="9" assertions="15" failures="0" errors="0" time="0.393784">
+    <testsuite name="Users_test" file="/var/www/html/formstack/server-playbooks-devtest/application/tests/controllers/Users_test.php" tests="4" assertions="8" failures="0" errors="0" time="0.145581">
+      <testcase name="testAccessToRootShowsIndex" class="Users_test" file="/var/www/html/formstack/server-playbooks-devtest/application/tests/controllers/Users_test.php" line="16" assertions="1" time="0.041510"/>
+      <testcase name="testAccessNotfoundShow404" class="Users_test" file="/var/www/html/formstack/server-playbooks-devtest/application/tests/controllers/Users_test.php" line="25" assertions="1" time="0.017422"/>
+      <testcase name="testPostingValidUserShowsSuccessfulMessage" class="Users_test" file="/var/www/html/formstack/server-playbooks-devtest/application/tests/controllers/Users_test.php" line="34" assertions="1" time="0.056820"/>
+      <testcase name="testPostInvalidUserDataShowsErrorMessages" class="Users_test" file="/var/www/html/formstack/server-playbooks-devtest/application/tests/controllers/Users_test.php" line="62" assertions="5" time="0.029829"/>
+    </testsuite>
+    <testsuite name="Welcome_test" file="/var/www/html/formstack/server-playbooks-devtest/application/tests/controllers/Welcome_test.php" tests="3" assertions="3" failures="0" errors="0" time="0.042579">
+      <testcase name="test_index" class="Welcome_test" file="/var/www/html/formstack/server-playbooks-devtest/application/tests/controllers/Welcome_test.php" line="13" assertions="1" time="0.016991"/>
+      <testcase name="test_method_404" class="Welcome_test" file="/var/www/html/formstack/server-playbooks-devtest/application/tests/controllers/Welcome_test.php" line="19" assertions="1" time="0.015751"/>
+      <testcase name="test_APPPATH" class="Welcome_test" file="/var/www/html/formstack/server-playbooks-devtest/application/tests/controllers/Welcome_test.php" line="25" assertions="1" time="0.009837"/>
+    </testsuite>
+    <testsuite name="Users_model_test" file="/var/www/html/formstack/server-playbooks-devtest/application/tests/models/Users_model_test.php" tests="2" assertions="4" failures="0" errors="0" time="0.205623">
+      <testcase name="testGetUsersWithIdFromUsersTableReturnsTheUser" class="Users_model_test" file="/var/www/html/formstack/server-playbooks-devtest/application/tests/models/Users_model_test.php" line="28" assertions="2" time="0.155454"/>
+      <testcase name="testPostDataInsertedIntoUsersTableAndReturn" class="Users_model_test" file="/var/www/html/formstack/server-playbooks-devtest/application/tests/models/Users_model_test.php" line="59" assertions="2" time="0.050169"/>
     </testsuite>
   </testsuite>
 </testsuites>
