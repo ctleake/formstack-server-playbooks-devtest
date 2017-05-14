@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1494776231">
-  <project timestamp="1494776231">
+<coverage generated="1494780847">
+  <project timestamp="1494780847">
     <file name="/var/www/html/formstack/server-playbooks-devtest/application/controllers/Users.php">
       <class name="Users" namespace="global">
         <metrics complexity="10" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="29" coveredstatements="29" elements="32" coveredelements="32"/>
